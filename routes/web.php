@@ -1,17 +1,19 @@
 <?php
 
-use App\Http\Controllers\skillController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authController;
-use App\Http\Controllers\depanController;
+use App\Http\Controllers\HomeController;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\depanController;
+use App\Http\Controllers\skillController;
+use App\Http\Controllers\CameraController;
+use App\Http\Controllers\PythonController;
 use App\Http\Controllers\halamanController;
+use App\Http\Controllers\profileController;
 use App\Http\Controllers\educationController;
 use App\Http\Controllers\experienceController;
 use App\Http\Controllers\pengaturanHalamanController;
-use App\Http\Controllers\profileController;
-use App\Http\Controllers\HomeController;
 
 
 Route::get('/', function () {
@@ -31,6 +33,8 @@ Route::get('/auth/redirect', [authController::class, "redirect"])->middleware('g
 Route::get('/auth/callback', [authController::class, "callback"])->middleware('guest');
 Route::get("auth/logout", [authController::class, "logout"]);
 
+Route::get('/run-python', [PythonController::class, 'runPythonScript']);
+Route::get('/capture', [CameraController::class, 'capture']);
 
 Route::prefix('dashboard')->middleware('auth')->group(
     function(){
