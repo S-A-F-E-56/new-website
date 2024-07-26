@@ -1,17 +1,17 @@
 @extends('dashboard.layout')
 @section('konten')
     
-    <p class="card-title">Experience</p>
-    <div class="pb-3"><a href= "{{ route('experience.create') }}" class="btn btn-primary">+ Add Experience</a></div>
+    <p class="card-title">Jadwal Mahasiswa</p>
+    <div class="pb-3"><a href= "{{ route('experience.create') }}" class="btn btn-primary">+ Add Jadwal Mahasiswa</a></div>
     <div class="table-responsive">
         <table class="table table-stripped">
             <thead>
                 <tr>
                     <th class="col-1">No</th>
-                    <th>Position</th>
-                    <th>Company's Name</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
+                    <th>Mata Kuliah</th>
+                    <th>Hari</th>
+                    <th>Start Class</th>
+                    <th>End Class</th>
                     <th class='col-2'>Aksi</th>
                 </tr>
             </thead>
@@ -22,8 +22,8 @@
                     <td>{{ $i }}</td>
                     <td>{{ $item->judul }}</td>
                     <td>{{ $item->info1 }}</td>
-                    <td>{{ $item->tgl_mulai_indo }}</td>
-                    <td>{{ $item->tgl_akhir_indo }}</td>
+                    <td>{{ $item->tgl_mulai }}</td>
+                    <td>{{ $item->tgl_akhir }}</td>
                     <td>
                         <a href='{{ route('experience.edit', $item->id) }}' class="btn-sm btn-warning">Edit</a>
                         <form onsubmit="return confirm('Yakin mau hapus data ini?')

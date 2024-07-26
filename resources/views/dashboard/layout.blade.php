@@ -85,37 +85,19 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('halaman.index') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Halaman</span>
+              <span class="menu-title">Daftar Mahasiswa</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('experience.index') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Experience</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('education.index') }}">
-              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Education</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('skill.index') }}">
-              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Skill</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('profile.index') }}">
-              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Profile</span>
+              <span class="menu-title">Jadwal Mahasiswa</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('pengaturanHalaman.index') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Pengaturan Halaman</span>
+              <span class="menu-title">Pengaturan Tampilan</span>
             </a>
           </li>
         </ul>
@@ -138,8 +120,8 @@
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
         <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2021</span>
-          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Only the best <a href="https://www.bootstrapdash.com/" target="_blank"> Bootstrap dashboard  </a> templates</span>
+          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Kelompok 56</span>
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Presensi Mahasiswa</span>
         </div>
         </footer>
         <!-- partial -->
